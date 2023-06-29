@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+    <title>Contact</title>
+    <style>
+
+        
+
+:root {
+    --primary-color: #fff;
+    --grey-color: #666;
+    --dar-blue-color: hsl(223deg 57% 12%);
+    --medium-font-size: 20px;
+    --small-font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* -======= Contact =====- */
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--primary-color);
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+contact-text {
+    flex-basis: 48%;
+}
+
+.contact-text p {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.contact-text h6,
+.contact-text .address,
+.contact-text .mail {
+    font-size: var(--medium-font-size);
+}
+
+.contact-text h6 {
+    color: var(--dar-blue-color);
+}
+
+.contact-form {
+    flex-basis: 48%;
+}
+
+.cont .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont .contact-form form label {
+    font-size: var(--medium-font-size);
+    padding: 10px 0;
+}
+
+.cont .contact-form form input,
+.cont .contact-form form textarea {
+    font-size: var(--medium-font-size);
+    padding: 10px 0;
+    resize: none;
+    margin: 6px 0;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid var(--grey-color);
+}
+
+.cont .contact-form form input[type="submit"] {
+    margin: 16px 0;
+    width: 26%;
+    cursor: pointer;
+    border: 2px solid var(--dar-blue-color);
+    font-size: var(--medium-font-size);
+    background-color: var(--dar-blue-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.cont .contact-form form input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--dar-blue-color);
+    font-weight: 600;
+}
+
+
+/* -======= Media Queriers =====- */
+
+@media (max-width: 500px) {
+    .cont {
+        display: block;
+        flex-direction: column;
+    }
+    .contact {
+        padding-top: 0;
+    }
+    .cont .contact-form form input,
+    .cont .contact-form form textarea {
+        width: 100%;
+    }
+    .cont .contact-form form input[type="submit"] {
+        width: 23%;
+        font-size: var(--small-font-size);
+    }
+    .contact-text p {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .cont {
+        display: block;
+        flex-direction: column;
+    }
+    .contact {
+        padding-top: 0;
+    }
+    .cont .contact-form form input,
+    .cont .contact-form form textarea {
+        width: 100%;
+    }
+    .cont .contact-form form input[type="submit"] {
+        width: 23%;
+        font-size: var(--small-font-size);
+    }
+    .contact-text p {
+        margin-right: 0;
+    }
+}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+
+    <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/1.jpg');">
+        <div class="wrapper row1">
+            <nav id="mainav" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <ul class="clear">
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+    <div>
+
+
+
+        <section class="contact">
+            <div class="cont container">
+                <img src="../images/demo/backgrounds/logo.png">
+                <div class="contact-text">
+                     
+                    <h6>Address</h6>
+                    <p class="address">
+                        A/P Sangli <br>
+                        PIN-416416 <br>
+
+                    </p>
+                    <h6>Email</h6>
+                    <p class="mail">contactus@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper row4">
+
+        <div class="wrapper row5">
+            <div id="copyright" class="hoc clear">
+                <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">KEATN </a></p>
+
+            </div>
+        </div>
+        <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+        <!-- JAVASCRIPTS -->
+        <script src="layout/scripts/jquery.min.js"></script>
+        <script src="layout/scripts/jquery.backtotop.js"></script>
+        <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+
+</html>
